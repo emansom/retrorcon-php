@@ -1,16 +1,16 @@
 <?php
-namespace Kepler;
+namespace Kepler\Rcon;
 
-use Phalcon\Di\Injectable as Injectable;
 use Grpc\ChannelCredentials as ChannelCredentials;
-use Kepler\Rcon\RconClient as RconClient;
 use Google\Protobuf\GPBEmpty as EmptyRequest;
+
+use Kepler\Rcon\RconClient as RconClient;
 use Kepler\Rcon\RefreshAppearanceRequest as RefreshAppearanceRequest;
 use Kepler\Rcon\RefreshBadgesRequest as RefreshBadgesRequest;
 use Kepler\Rcon\HotelAlertRequest as HotelAlertRequest;
 use Kepler\Rcon\UserOnlineRequest as UserOnlineRequest;
 
-class RemoteConnection extends Injectable
+class RemoteConnection
 {
     private $client;
 
