@@ -1,5 +1,18 @@
 {
     "name": "ewout/retrorcon",
+    "description": "A PHP library to communicate with emulators adhering to the RetroRCON standard",
+    "type": "library",
+    "license": "AGPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Ewout van Mansom",
+            "email": "ewout@freedom.nl"
+        }
+    ],
+    "require": {
+        "grpc/grpc": "^v1.12.0",
+        "google/protobuf": "^3.6.0.1"
+    },
     "autoload": {
         "psr-4" : {
             "Kepler\\Rcon\\" : ["dist/", "src/"]
