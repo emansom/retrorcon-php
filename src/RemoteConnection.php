@@ -97,7 +97,7 @@ class RemoteConnection
         return $resp->getOk();
     }
 
-    public function isUserOnline(mixed $identifier): bool
+    public function isUserOnline($identifier): bool
     {
         // Wait 10ms to connect to RCON
         if (!$this->client->waitForReady(10 * 1000)) {
