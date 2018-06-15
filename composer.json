@@ -15,7 +15,8 @@
     },
     "autoload": {
         "psr-4" : {
-            "Kepler\\Rcon\\" : ["dist/", "src/"]
+            "Kepler\\Rcon\\" : ["dist/", "src/"],
+            "GPBMetadata": "metadata/"
         }
     }
 }
