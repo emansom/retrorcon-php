@@ -21,7 +21,7 @@ The project requires PHP 7.2 or higher and uses the Composer autoloader and PSR-
 include 'vendor/autoload.php';
 
 // Shortcut for the FQN
-use Kepler\Rcon\RemoteConnection;
+use RetroRCON\RemoteConnection;
 
 // Create new RCON instance
 $rcon = new RemoteConnection(

@@ -1,7 +1,7 @@
 <?php
 // GENERATED CODE -- DO NOT EDIT!
 
-namespace Kepler\Rcon;
+namespace RetroRCON;
 
 /**
  */
@@ -23,9 +23,9 @@ class RconClient extends \Grpc\BaseStub {
      */
     public function Ping(\Google\Protobuf\GPBEmpty $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/Ping',
+        return $this->_simpleRequest('/RetroRCON.Rcon/Ping',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
@@ -36,35 +36,35 @@ class RconClient extends \Grpc\BaseStub {
      */
     public function GetOnlineCount(\Google\Protobuf\GPBEmpty $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/GetOnlineCount',
+        return $this->_simpleRequest('/RetroRCON.Rcon/GetOnlineCount',
         $argument,
-        ['\Kepler\Rcon\OnlineCountResponse', 'decode'],
+        ['\RetroRCON\OnlineCountResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Kepler\Rcon\RefreshAppearanceRequest $argument input argument
+     * @param \RetroRCON\RefreshAppearanceRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function RefreshAppearance(\Kepler\Rcon\RefreshAppearanceRequest $argument,
+    public function RefreshAppearance(\RetroRCON\RefreshAppearanceRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/RefreshAppearance',
+        return $this->_simpleRequest('/RetroRCON.Rcon/RefreshAppearance',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Kepler\Rcon\RefreshBadgesRequest $argument input argument
+     * @param \RetroRCON\RefreshBadgesRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function RefreshBadges(\Kepler\Rcon\RefreshBadgesRequest $argument,
+    public function RefreshBadges(\RetroRCON\RefreshBadgesRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/RefreshBadges',
+        return $this->_simpleRequest('/RetroRCON.Rcon/RefreshBadges',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
@@ -75,9 +75,9 @@ class RconClient extends \Grpc\BaseStub {
      */
     public function RefreshEvents(\Google\Protobuf\GPBEmpty $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/RefreshEvents',
+        return $this->_simpleRequest('/RetroRCON.Rcon/RefreshEvents',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
@@ -88,9 +88,9 @@ class RconClient extends \Grpc\BaseStub {
      */
     public function RefreshCatalogue(\Google\Protobuf\GPBEmpty $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/RefreshCatalogue',
+        return $this->_simpleRequest('/RetroRCON.Rcon/RefreshCatalogue',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
@@ -101,9 +101,9 @@ class RconClient extends \Grpc\BaseStub {
      */
     public function OpenInfobus(\Google\Protobuf\GPBEmpty $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/OpenInfobus',
+        return $this->_simpleRequest('/RetroRCON.Rcon/OpenInfobus',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
@@ -114,114 +114,114 @@ class RconClient extends \Grpc\BaseStub {
      */
     public function CloseInfobus(\Google\Protobuf\GPBEmpty $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/CloseInfobus',
+        return $this->_simpleRequest('/RetroRCON.Rcon/CloseInfobus',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
      * TODO: Alert function with enum type
-     * @param \Kepler\Rcon\RoomAlertRequest $argument input argument
+     * @param \RetroRCON\RoomAlertRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function AlertRoom(\Kepler\Rcon\RoomAlertRequest $argument,
+    public function AlertRoom(\RetroRCON\RoomAlertRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/AlertRoom',
+        return $this->_simpleRequest('/RetroRCON.Rcon/AlertRoom',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Kepler\Rcon\UserAlertRequest $argument input argument
+     * @param \RetroRCON\UserAlertRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function AlertUser(\Kepler\Rcon\UserAlertRequest $argument,
+    public function AlertUser(\RetroRCON\UserAlertRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/AlertUser',
+        return $this->_simpleRequest('/RetroRCON.Rcon/AlertUser',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Kepler\Rcon\HotelAlertRequest $argument input argument
+     * @param \RetroRCON\HotelAlertRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function AlertHotel(\Kepler\Rcon\HotelAlertRequest $argument,
+    public function AlertHotel(\RetroRCON\HotelAlertRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/AlertHotel',
+        return $this->_simpleRequest('/RetroRCON.Rcon/AlertHotel',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Kepler\Rcon\UserOnlineRequest $argument input argument
+     * @param \RetroRCON\UserOnlineRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function IsUserOnline(\Kepler\Rcon\UserOnlineRequest $argument,
+    public function IsUserOnline(\RetroRCON\UserOnlineRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/IsUserOnline',
+        return $this->_simpleRequest('/RetroRCON.Rcon/IsUserOnline',
         $argument,
-        ['\Kepler\Rcon\UserOnlineResponse', 'decode'],
+        ['\RetroRCON\UserOnlineResponse', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Kepler\Rcon\Room $argument input argument
+     * @param \RetroRCON\Room $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function ChangeRoom(\Kepler\Rcon\Room $argument,
+    public function ChangeRoom(\RetroRCON\Room $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/ChangeRoom',
+        return $this->_simpleRequest('/RetroRCON.Rcon/ChangeRoom',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Kepler\Rcon\User $argument input argument
+     * @param \RetroRCON\User $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function ChangeUser(\Kepler\Rcon\User $argument,
+    public function ChangeUser(\RetroRCON\User $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/ChangeUser',
+        return $this->_simpleRequest('/RetroRCON.Rcon/ChangeUser',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Kepler\Rcon\BanRequest $argument input argument
+     * @param \RetroRCON\BanRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function Ban(\Kepler\Rcon\BanRequest $argument,
+    public function Ban(\RetroRCON\BanRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/Ban',
+        return $this->_simpleRequest('/RetroRCON.Rcon/Ban',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 
     /**
-     * @param \Kepler\Rcon\UnbanRequest $argument input argument
+     * @param \RetroRCON\UnbanRequest $argument input argument
      * @param array $metadata metadata
      * @param array $options call options
      */
-    public function Unban(\Kepler\Rcon\UnbanRequest $argument,
+    public function Unban(\RetroRCON\UnbanRequest $argument,
       $metadata = [], $options = []) {
-        return $this->_simpleRequest('/kepler.rcon.Rcon/Unban',
+        return $this->_simpleRequest('/RetroRCON.Rcon/Unban',
         $argument,
-        ['\Kepler\Rcon\Response', 'decode'],
+        ['\RetroRCON\Response', 'decode'],
         $metadata, $options);
     }
 

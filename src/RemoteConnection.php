@@ -1,14 +1,8 @@
 <?php
-namespace Kepler\Rcon;
+namespace RetroRCON;
 
 use Grpc\ChannelCredentials as ChannelCredentials;
 use Google\Protobuf\GPBEmpty as EmptyRequest;
-
-use Kepler\Rcon\RconClient as RconClient;
-use Kepler\Rcon\RefreshAppearanceRequest as RefreshAppearanceRequest;
-use Kepler\Rcon\RefreshBadgesRequest as RefreshBadgesRequest;
-use Kepler\Rcon\HotelAlertRequest as HotelAlertRequest;
-use Kepler\Rcon\UserOnlineRequest as UserOnlineRequest;
 
 class RemoteConnection
 {
@@ -23,8 +17,8 @@ class RemoteConnection
 
     public function getOnlineCount(): int
     {
-        // Wait 10ms to connect to RCON
-        if (!$this->client->waitForReady(10 * 1000)) {
+        // Wait for RCON to become ready, with a 30ms timeout
+        if (!$this->client->waitForReady(30 * 1000)) {
             return 0;
         }
 
@@ -42,8 +36,8 @@ class RemoteConnection
 
     public function ping(): bool
     {
-        // Wait 10ms to connect to RCON
-        if (!$this->client->waitForReady(10 * 1000)) {
+        // Wait for RCON to become ready, with a 30ms timeout
+        if (!$this->client->waitForReady(30 * 1000)) {
             return false;
         }
 
@@ -59,8 +53,8 @@ class RemoteConnection
 
     public function refreshLook(int $userId): bool
     {
-        // Wait 10ms to connect to RCON
-        if (!$this->client->waitForReady(10 * 1000)) {
+        // Wait for RCON to become ready, with a 30ms timeout
+        if (!$this->client->waitForReady(30 * 1000)) {
             return false;
         }
 
@@ -79,8 +73,8 @@ class RemoteConnection
 
     public function refreshBadges(int $userId): bool
     {
-        // Wait 10ms to connect to RCON
-        if (!$this->client->waitForReady(10 * 1000)) {
+        // Wait for RCON to become ready, with a 30ms timeout
+        if (!$this->client->waitForReady(30 * 1000)) {
             return false;
         }
 
@@ -99,8 +93,8 @@ class RemoteConnection
 
     public function isUserOnline($identifier): bool
     {
-        // Wait 10ms to connect to RCON
-        if (!$this->client->waitForReady(10 * 1000)) {
+        // Wait for RCON to become ready, with a 30ms timeout
+        if (!$this->client->waitForReady(30 * 1000)) {
             return false;
         }
 

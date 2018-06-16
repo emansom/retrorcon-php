@@ -15,8 +15,8 @@
     },
     "autoload": {
         "psr-4" : {
-            "Kepler\\Rcon\\" : ["dist/", "src/"],
-            "GPBMetadata\\": "metadata/"
+            "RetroRCON\\" : ["dist/php/RetroRCON/", "dist/grpc/RetroRCON/", "src/"],
+            "GPBMetadata\\Protos\\": "dist/php/GPBMetadata/Protos/"
         }
     }
 }
