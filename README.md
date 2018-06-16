@@ -12,7 +12,7 @@ The project requires PHP 7.2 or higher and uses the Composer autoloader and PSR-
 3. [Install](https://getcomposer.org/doc/00-intro.md) and [learn](https://getcomposer.org/doc/01-basic-usage.md) how to use [composer](https://getcomposer.org/)
 3. Add [the composer package](https://packagist.org/packages/ewout/retrorcon) to your project by running `composer require ewout/retrorcon`
 2. Make sure to include [composer's autoloader](https://getcomposer.org/doc/01-basic-usage.md#autoloading)
-3. Look at `example.php` and the snippet below on how to use the library
+3. Look at the snippet below on how to use the library
 
 ## Usage
 ```php
