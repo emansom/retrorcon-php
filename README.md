@@ -4,7 +4,7 @@
 # retrorcon-php
 This PHP library is used to get information such as users online, refreshing users' look and doing housekeeping activity such as e.g. sending room alerts by communicating with emulators adhering to the [RetroRCON](https://github.com/emansom/retrorcon) standard.
 
-The project requires PHP 7.2 or higher and uses the Composer autoloader and PSR-4 standard.
+The project requires PHP 7.2 or higher and uses composer's autoloader following the PSR-4 standard.
 
 ## How to use it
 1. [Install](https://grpc.io/docs/quickstart/php.html#install-the-grpc-php-extension) and [configure](https://grpc.io/docs/quickstart/php.html#update-phpini) the PHP gRPC extension

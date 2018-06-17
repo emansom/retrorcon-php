@@ -225,4 +225,17 @@ class RconClient extends \Grpc\BaseStub {
         $metadata, $options);
     }
 
+    /**
+     * @param \RetroRCON\StarterRoomRequest $argument input argument
+     * @param array $metadata metadata
+     * @param array $options call options
+     */
+    public function CreateStarterRoom(\RetroRCON\StarterRoomRequest $argument,
+      $metadata = [], $options = []) {
+        return $this->_simpleRequest('/RetroRCON.Rcon/CreateStarterRoom',
+        $argument,
+        ['\RetroRCON\Response', 'decode'],
+        $metadata, $options);
+    }
+
 }
