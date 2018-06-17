@@ -117,6 +117,27 @@ class RemoteConnection
         return $resp->getOnline();
     }
 
+    public function createStarterRoom(int $userId, StarterRoomRequest_StarterRoomTheme $theme): bool
+    {
+        // Wait for RCON to become ready, with a 30ms timeout
+        if (!$this->client->waitForReady(30 * 1000)) {
+            return false;
+        }
+
+        $req = new StarterRoomRequest();
+        $req->setUserId($userId);
+        $req->setTheme($theme);
+
+        // Call emulator
+        list($resp, $status) = $this->client->CreateStarterRoom($req)->wait();
+
+        if ($status->code !== \Grpc\STATUS_OK) {
+            return false;
+        }
+
+        return $resp->getOk();
+    }
+
     public function sendAlert(string $message, array $options): bool
     {
         // TODO: implement. ideas below
